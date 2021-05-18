@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Test</title>
+    <link type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@100&display=swap">
+    <!-- <link type="text/css" href="grid.css"> -->
+    <style>
+        html {
+            font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+        }
+
+body {
+  margin: 40px;
+  background-color: #031822;
+  color: #fff;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  
+ 
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(12rem, 1fr));
+    grid-auto-flow: row;
+    background-color: #031822;
+    color: #444;
+  }
+
+  .box {
+    background-color:rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.9);
+    border-radius: 0px;
+    padding: 0;
+       
+    height: 0;
+    padding-bottom: 100%;
+
+    font-size: 120%;
+    text-align: center;
+
+    }
+
+  .box * { }
+  .box img { max-width: 100%; min-width: 100%; /* display: block; */ }
+  .box p { 
+   letter-spacing: 0.125px;  
+    padding: 1rem;
+    margin: 0%;
+    }
+
+  .red { background-color: #ee0031;}
+  .blue { background-color: #031822;  
+    /*border-right: 30px solid #15a8e1; 
+    border-bottom: 30px solid #031822; */
+
+    transform: translate(-2rem, -2rem);
+    box-shadow: 2rem 2rem 0  0 #15a8e1;
+}
+
+  .large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+
+/*
+  .a {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .b {
+    grid-column: 3 ;
+    grid-row: 1 / 3;
+  }
+  .c {
+    grid-column: 1 ;
+    grid-row: 2 ;
+  }
+  .d {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+*/
+
+
+    </style>
+</head>
+<body>
+<h1>Hey</h1>
+<p>This is a grid test</p>
+
+<section class="wrapper">
+    <div class="box a"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+    <div class="box b large"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+    <div class="box c"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+    <div class="box d red"><p>SEVEN DAYS FREE</p></div>
+
+    <div class="box e blue"><p>NO AD BREAKS. ANYWHERE.</p></div>
+    <div class="box f blue"><p>NO CONTRACT. CANCEL ANYTIME.</p></div>
+    <div class="box g"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+    <div class="box h large"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+
+    <div class="box i"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+    <div class="box j"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+    <div class="box k"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+    <div class="box l blue"><p>DISCOVER NEW EXCLUSIVES AND GREAT ORIGINALS.</p></div>
+
+    <div class="box m"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+    <div class="box n"><img src="https://us.britbox.com/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=60&ImageId=%27243978%27&EntityType=%27Item%27&EntityId=%2725993%27&Width=500&Height=500&device=web_browser&subscriptions=Subscriber&segmentationTags=us&imageType=square"></div>
+
+</section>
+
+</body>
+</html>
